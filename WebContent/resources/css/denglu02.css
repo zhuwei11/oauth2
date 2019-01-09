@@ -1,0 +1,721 @@
+ html, body, ul, li, p, h1, div, a, img {
+                padding: 0;
+                margin: 0
+            }
+            html, body {
+                background: #f9f9f9;
+                line-height: 1.5;
+                color: #333;
+                font-size: 12px
+            }
+            body, input {
+                font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
+            }
+            a, label, :focus {
+                outline: 0 none
+            }
+            a, img {
+                border: 0 none
+            }
+            a {
+                text-decoration: none
+            }
+            @media screen and (-ms-high-contrast: active) , (-ms-high-contrast: none) {
+                a {
+                    background-color: transparent
+                }
+            }
+            html, body {
+                height: 100%;
+                width: 100%
+            }
+            .layout {
+                min-height: 600px;
+                height: 100%;
+                _height: 600px;
+                position: relative
+            }
+            .nl-content {
+                text-align: center;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -280px
+            }
+            .nl-logo-area {
+                margin-bottom: 20px;
+                height: 80px
+            }
+            .nl-login-title {
+                font-size: 32px;
+                margin-bottom: 30px;
+                color: #000
+            }
+            .nl-login-intro {
+                color: #8d8d8d;
+                font-size: 14px;
+                margin-bottom: 30px
+            }
+            .nl-login-intro a {
+                color: #8d8d8d
+            }
+            .nl-login-intro a:hover {
+                color: #ff7e00;
+                text-decoration: none
+            }
+            .nl-phone-tip {
+                width: 324px;
+                margin: 0 auto;
+                text-align: left;
+                height: 36px
+            }
+            .nl-footer {
+                text-align: center;
+                padding-bottom: 20px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%
+            }
+            .nl-f-nav {
+                margin-bottom: 10px
+            }
+            .nl-f-nav a {
+                display: inline-block;
+                *zoom: 1;
+                *display: inline;
+                color: #919191;
+                padding: 0 6px;
+                line-height: 1.2
+            }
+            .nl-f-nav a:hover {
+                color: #545454;
+                font-weight: bold
+            }
+            .nl-f-copyright {
+                color: #999
+            }
+            .zh_CN .zh-cn, .zh_TW .zh-tw, .en .zh-en {
+                color: #545454;
+                font-weight: bold
+            }
+            .zh_TW .nl-phone-tip {
+                text-align: center
+            }
+            .minilogin-frame {
+                margin-left: 100px
+            }
+            ::-ms-clear {
+                display: none
+            }
+            ::-ms-reveal {
+                display: none
+            }
+            input::-ms-clear {
+                display: none
+            }
+            input::-ms-reveal {
+                display: none
+            }
+            .clearfix:after {
+                display: block;
+                content: "\20";
+                height: 0;
+                clear: both;
+                overflow: hidden;
+                visibility: hidden
+            }
+            .clearfix {
+                *zoom: 1
+            }
+            .hide {
+                visibility: hidden !important
+            }
+            .ng-form-area {
+                display: none
+            }
+            .en .corner {
+                right: 130px
+            }
+            .en .corner-inner {
+                right: 131px
+            }
+            .miniLogin_forbidden {
+                margin-bottom: 30px;
+                height: 50px;
+                background-color: #eee;
+                border: 1px solid #d8d8d8;
+                width: 322px;
+                position: relative;
+                color: red;
+                display: none
+            }
+            .miniLogin_forbidden div {
+                position: absolute;
+                left: 20px;
+                height: 16px;
+                top: 17px
+            }
+            .modal_container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                width: 100%;
+                height: 100%
+            }
+            .modal_msk {
+                background: #000;
+                width: 100%;
+                height: 100%;
+                opacity: .4;
+                filter: alpha(opacity=40);
+                position: absolute;
+                left: 0;
+                top: 0
+            }
+            .modal_tip {
+                background: #fff;
+                margin: 0 auto;
+                padding: 0 14px;
+                line-height: 30px;
+                border: 6px solid rgba(62,62,62,0.24);
+                border: 6px solid #d1d1d1 \9;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+                color: #666;
+                position: absolute
+            }
+            :root .modal_tip {
+                border: 6px solid rgba(62,62,62,0.24)
+            }
+            .modal_tip_hd {
+                height: 42px;
+                padding-top: 13px;
+                line-height: 42px;
+                border-bottom: 1px solid #e6e6e6;
+                position: relative
+            }
+            .modal_tip_title {
+                color: #1e1e1e;
+                font-size: 15px;
+                font-weight: bold
+            }
+            .modal_tip_close {
+                width: 8px;
+                height: 8px;
+                overflow: hidden;
+                position: absolute;
+                top: 14px;
+                right: 0;
+                background: url(../img/icon_tip.png)
+            }
+            .captcha-code-area {
+                overflow: hidden;
+                padding: 20px 20px 50px;
+                width: 400px
+            }
+            .captcha-title {
+                font-size: 14px;
+                line-height: 1.5;
+                padding-bottom: 10px
+            }
+            .captcha-code {
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                height: 20px;
+                line-height: normal;
+                padding: 10px;
+                border: 1px solid #ccc;
+                width: 180px;
+                vertical-align: bottom;
+                background: #fff;
+                border-radius: 6px
+            }
+            .captcha-img {
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                height: 60px;
+                background: #eee;
+                width: 180px;
+                vertical-align: bottom;
+                position: relative;
+                top: 6px
+            }
+            .captcha-error {
+                color: #ee710b;
+                font-size: 12px
+            }
+            .captcha-btn-area {
+                text-align: center;
+                padding-top: 40px
+            }
+            .captcha-btn {
+                display: inline-block;
+                *zoom: 1;
+                *display: inline;
+                height: 40px;
+                line-height: normal;
+                color: #333;
+                background: #fff;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                width: 140px;
+                text-align: center
+            }
+            .captcha-highlight-btn {
+                margin-right: 20px;
+                background: #ee7838;
+                border: 1px solid #ee7838;
+                color: #fff
+            }
+            .captcha-btn:hover {
+                color: #000
+            }
+            .captcha-highlight-btn:hover {
+                background: #e76c2a;
+                color: #fff
+            }
+            .hide {
+                display: none !important
+            }
+            .mt20 {
+                margin-top: 20px
+            }
+            .main-content {
+                width: 350px;
+                padding: 10px 0 0 60px;
+                margin: 0 auto;
+                text-align: left;
+                position: absolute;
+                left: 50%;
+                margin-left: -225px
+            }
+            .switch-channel {
+                width: 96%;
+                margin: 0 auto
+            }
+            .switch-channel p {
+                height: auto;
+                font-size: 14px
+            }
+            .switch-channel label {
+                display: block;
+                padding: 7px
+            }
+            .switch-channel h4 {
+                font-size: 16px;
+                font-weight: bold;
+                height: 20px;
+                line-height: 20px;
+                padding: 20px 0;
+                margin: 0
+            }
+            .button {
+                width: 100%;
+                cursor: pointer;
+                border-radius: 6px;
+                display: block;
+                font-size: 16px;
+                height: 42px;
+                line-height: 42px;
+                text-align: center
+            }
+            .orange_button {
+                background: url("/static/img/passport/s_bgs.png") repeat-x 0 -0;
+                color: #fff;
+                border: 1px solid #ff936a
+            }
+            .orange_button:hover {
+                background: #ff936a;
+                border: 1px solid #ff936a
+            }
+            .write_button {
+                background: #FFF;
+                color: #7c7c7c;
+                border: 1px solid #e5e5e5
+            }
+            .write_button:hover {
+                color: #333
+            }
+            .two-step {
+                font-size: 14px;
+                width: 96%;
+                margin: 0 auto
+            }
+            .tip_info {
+                font-size: 20px;
+                padding: 10px 0;
+                font-weight: bold;
+                _font-size: 18px
+            }
+            .other-info {
+                padding: 5px 0;
+                font-size: 14px
+            }
+            .other-info input {
+                position: relative;
+                top: 2px
+            }
+            .input_item {
+                padding: 5px 0
+            }
+            .Unavailable {
+                text-align: right
+            }
+            .Unavailable a {
+                padding: 7px 0;
+                color: #666;
+                display: inline-block;
+                font-size: 14px
+            }
+            .Unavailable a:hover {
+                color: #ff7e00
+            }
+            .phone_num {
+                font-size: 16px;
+                font-weight: normal;
+                color: #666;
+                height: 25px;
+                line-height: 25px
+            }
+            .send_status {
+                cursor: pointer;
+                display: inline-block;
+                font-size: 12px;
+                text-align: center;
+                padding: 5px;
+                color: #ff7e00;
+                text-decoration: underline
+            }
+            .tl {
+                text-align: left
+            }
+            .send_sms_button {
+                background: url(../img/s_bgs.png) repeat-x 0 0;
+                border: 1px solid #ff7549;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 14px;
+                height: 36px;
+                line-height: 36px;
+                border-radius: 3px;
+                width: auto;
+                padding: 0 15px;
+                color: #FFF
+            }
+            .only_sms .mt20 {
+                margin-top: 5px
+            }
+            .only_sms .input_item {
+                height: 65px
+            }
+            .sendsms_last {
+                font-size: 12px;
+                margin-left: 10px;
+                color: #ff7e00
+            }
+            .disable, .disable:hover {
+                background: #f3f3f3;
+                border: 1px solid #cdcdcd;
+                color: #b0b0b0
+            }
+            .p_pop {
+                position: relative;
+                display: inline-block;
+                *display: inline;
+                zoom: 1
+            }
+            .pop {
+                position: absolute;
+                left: 10px;
+                top: -18px;
+                z-index: 10;
+                margin-left: 10px;
+                display: none;
+                padding-left: 10px;
+                width: auto
+            }
+            .hover .pop {
+                display: inline-block;
+                *display: inline;
+                zoom: 1
+            }
+            .doubt {
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                overflow: hidden;
+                background: url(/static/img/passport/icos.png) 0 0 no-repeat;
+                vertical-align: middle;
+                margin-left: 2px;
+                cursor: pointer
+            }
+            .td_lht {
+                line-height: 1.5;
+                font-size: 12px;
+                font-weight: normal;
+                color: #999;
+                padding: 6px 10px;
+                border: 1px solid #d8d8d8;
+                background: #fefefe url(/static/img/passport/s_bgspop.png) 0 bottom repeat-x;
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                border-radius: 5px;
+                -moz-box-shadow: 0 3px 3px #f0f0f0;
+                -webkit-box-shadow: 0 3px 3px #f0f0f0;
+                box-shadow: 0 3px 3px #f0f0f0;
+                width: 200px
+            }
+            .lit_tip {
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                width: 12px;
+                height: 11px;
+                background: url(/static/img/passport/icos.png) 0 -63px no-repeat;
+                overflow: hidden;
+                float: left;
+                top: 16px;
+                left: -1px;
+                position: absolute;
+                z-index: 11
+            }
+            .other-info-maybeerr {
+                position: absolute;
+                top: -30px;
+                background: #FFF;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                color: #f20
+            }
+            .mini-window {
+                position: relative;
+                min-height: 500px;
+                _height: 500px
+            }
+            .mini-window .layout {
+                width: 500px;
+                height: 500px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -245px;
+                margin-left: -250px;
+                min-height: 500px
+            }
+            .mini-window .nl-content {
+                position: static;
+                margin: 0;
+                overflow: hidden
+            }
+            .mini-window .nl-footer {
+                padding: 0;
+                position: static
+            }
+            .mini-window .nl-login-intro {
+                margin: 5px 0
+            }
+            .mini-window .nl-logo-area {
+                margin: 0;
+                height: auto
+            }
+            .mini-window .nl-footer, .mini-window .nl-phone-tip {
+                display: none
+            }
+            .mini-window .nl-login-title {
+                font-size: 28px;
+                margin-bottom: 0;
+                margin-top: 10px
+            }
+            .mini-window .minilogin-frame {
+                margin-left: 50px
+            }
+            .mini-window .strong-color {
+                color: #ff7e00;
+                font-weight: bold
+            }
+            .mini-window .lsrp-appname {
+                padding: 5px;
+                font-weight: normal;
+                font-size: 20px
+            }
+            .display-custom-hide {
+                display: none !important
+            }
+            .display-custom-show-block {
+                display: block !important
+            }
+            .display-custom-show-inline {
+                display: inline !important
+            }
+            .display-custom-show-inline-block {
+                display: inline-block !important
+            }
+            .en .tip_info {
+                font-size: 14px
+            }
+            .en .input_item {
+                height: 65px
+            }
+            .en .input_item .error {
+                display: block;
+                padding-top: 5px;
+                background-position: 3px 8px
+            }
+            @media all and (max-width: 640px) {
+                .layout {
+                    min-height: 350px
+                }
+                .nl-frame-container {
+                    max-width: 400px;
+                    margin: 0 auto
+                }
+                .mini-window {
+                    position: static;
+                    height: 100%
+                }
+                .mini-window .layout {
+                    margin: 0;
+                    position: static;
+                    width: auto;
+                    height: 100%;
+                    min-height: 350px
+                }
+                .ng-form-area {
+                    width: auto;
+                    margin: 0 auto;
+                    padding: 10px;
+                    height: auto
+                }
+                .enter-item {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 46px;
+                    line-height: normal;
+                    border: 1px solid #ccc
+                }
+                .button {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 44px;
+                    border-radius: 22px;
+                    background: #fff;
+                    border: 1px solid #d3d3d3;
+                    color: #737373
+                }
+                #custom_display_16, #custom_display_32, .nl-logo-area, .lsrp-appname, #custom_display_8, .prevnum_info, #custom_display_2 {
+                    display: none !important
+                }
+                .nl-footer {
+                    display: none
+                }
+                .nl-login-title {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    padding-top: 20px
+                }
+                .nl-content {
+                    position: static;
+                    margin: 0
+                }
+                .miniLogin_forbidden {
+                    margin-bottom: 10px;
+                    width: auto;
+                    height: 40px
+                }
+                .miniLogin_forbidden div {
+                    top: 11px
+                }
+                .orange, .orange:hover {
+                    background: #3ec234;
+                    border: 1px solid #219718;
+                    box-shadow: inset 0 1px 1px #57ca4e;
+                    color: #fff
+                }
+                .code-img {
+                    margin-bottom: 10px
+                }
+                .switch-channel h4 {
+                    font-size: 14px
+                }
+                .button {
+                    border-radius: 22px
+                }
+                .orange_button, .orange_button:hover {
+                    background: #3ec234;
+                    border: 1px solid #219718;
+                    box-shadow: inset 0 1px 1px #57ca4e;
+                    color: #fff
+                }
+                .send_sms_button {
+                    width: auto;
+                    height: 36px;
+                    background: #3ec234;
+                    border: 1px solid #219718;
+                    box-shadow: inset 0 1px 1px #57ca4e;
+                    color: #fff
+                }
+                .disable, .disable:hover {
+                    background: #f3f3f3;
+                    border: 1px solid #cdcdcd;
+                    color: #b0b0b0;
+                    box-shadow: none
+                }
+                .tip_info {
+                    font-size: 18px;
+                    padding: 10px 0;
+                    font-weight: normal
+                }
+                .en .tip_info {
+                    font-size: 14px
+                }
+                .en .input_item {
+                    height: 65px
+                }
+                .en .input_item .error {
+                    display: block;
+                    padding-top: 5px;
+                    background-position: 3px 8px
+                }
+                .code-enter-item {
+                    border-radius: 16px
+                }
+                .img-code-area .placeholder, .img-code-area .error-tip {
+                    left: 12px;
+                    top: 84px
+                }
+                .img-code-area .error-tip {
+                    left: 10px
+                }
+                .captcha-code-area {
+                    overflow: hidden;
+                    padding: 20px 2px 50px;
+                    width: 300px;
+                    text-align: center
+                }
+                .captcha-code-container {
+                    text-align: center
+                }
+                .captcha-highlight-btn, .captcha-highlight-btn:hover {
+                    background: #3ec234;
+                    border: 1px solid #219718;
+                    box-shadow: inset 0 1px 1px #57ca4e;
+                    color: #fff
+                }
+            }
+            .ng-form-area {
+                margin-left: 0;
+                margin: 0 auto
+            }

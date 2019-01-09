@@ -1,0 +1,32 @@
+body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,ol,ul,li,a,span,caption,th,td,form,fieldset,legend,input,button,textarea,address{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ol,ul{list-style:none}
+li{list-style:none;}
+fieldset,img{border:0}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+input,button,textarea,select{font-size:100%;}
+input,button,select,textarea{outline:none;}
+textarea{resize:none;}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;font-size:inherit}
+abbr[title]{border-bottom:1px dotted;cursor:help}
+a,a:hover{text-decoration:none}
+a,label, :focus{outline:0 none;}
+a, img{border:0 none;}
+s{font-style:normal; text-decoration:none;}
+body{font:12px/1 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+button, input, select, textarea {font-family:"Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
+input::-moz-placeholder, textarea::-moz-placeholder{color:#3b3b3b; font-weight:normal }
+::-webkit-input-placeholder {color:#3b3b3b; font-weight:normal;} 
+input:-ms-input-placeholder{color:#3b3b3b; font-weight:normal;}
+::-ms-clear{display:none;}
+::-ms-reveal{display:none;}
+.clearfix:after{display: block; content: "\20"; height: 0; clear: both; overflow: hidden; visibility: hidden;}/*ie8以上*/
+.clearfix{*zoom:1;}/*ie6、7*/
+input::-ms-clear{display:none;}
+input::-ms-reveal{display:none;}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  a{background-color:transparent;}
+}
+
